@@ -1,0 +1,13 @@
+/* ScrollIndicator.css */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px; 
+    background-color: #e66414; 
+    transition: width 0.3s ease-in-out; 
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  

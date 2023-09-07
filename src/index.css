@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Hide default vertical scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* Optional: Set a background color to mimic your page background */
+}
+
+/* Hide default horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+  display: none;
+}

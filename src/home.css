@@ -1,0 +1,23 @@
+#home{
+    background-color: red ;
+margin-top: calc(100% - 96%);
+}
+
+#services{
+background: green;
+}
+
+#skills{
+    background: rgb(218, 197, 93);
+}
+
+#projects{
+    background: rgb(0, 124, 128);
+    }
+    
+#contact{
+        background: rgb(151, 10, 194);
+}
+    
+
+
