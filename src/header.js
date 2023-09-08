@@ -33,6 +33,7 @@ return() => {
                     d= "full path on my GH!" fill="currentcolor" />
                 </svg>
             </div> */}
+            
             <nav className='header__nav'>
                 <ul className='list-items pt-3'>
                 <li><a href="#">Home</a></li>
@@ -44,11 +45,7 @@ return() => {
             </nav>
         </div>
     </header>
-    <section className='hero'>
-        {/* <div className='hero__thumb'>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDf4R1jMo_im5WWWMnh2Aq4TK7uDx-lr-EFw&usqp=CAU" alt='' />
-        </div> */}
-    </section>
+    
         </>
 
 
