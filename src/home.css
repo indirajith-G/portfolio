@@ -1,11 +1,9 @@
+
 #home{
-    background-color: red ;
-margin-top: calc(100% - 96%);
+    margin: 0;
+    padding: 0;
 }
 
-#services{
-background: green;
-}
 
 #skills{
     background: rgb(218, 197, 93);

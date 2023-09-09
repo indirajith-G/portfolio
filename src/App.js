@@ -1,9 +1,4 @@
 import React from 'react';
-import HomeContent from './home';
-import ServicesContent from './service';
-import SkillsContent from './skills';
-import ContactContent from './contact';
-import ProjectContent from './projects';
 import Header from './header';
 import ScrollIndicator from './Scroll';
 import Loader from './Loader';
@@ -47,7 +42,7 @@ class App extends Component {
               <div className='content'>
                 <Header/>
                 <ScrollIndicator />
-                  <div className="sections-container">
+                  {/* <div className="sections-container">
                 <div>
                   <HomeContent />
                 </div>
@@ -63,7 +58,7 @@ class App extends Component {
                 <div>
                   <ContactContent />
                 </div>
-                  </div>
+                  </div> */}
               </div>
             </div>
           </div>

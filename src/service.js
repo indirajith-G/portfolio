@@ -1,53 +1,56 @@
 import React from 'react';
-import './home.css';
+import './Services.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+
 export default function ServicesContent() {
   return (
-    <div id="services">
-
-      services 
-The “WP Dummy Content Generator” plugin is a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-
-This plugin offers a user-friendly interface that allows you to customize the type, quantity, and characteristics of the dummy content you want to generate. You can specify the number of posts or pages, assign categories or tags, and even include featured images.
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-One of the notable features of this plugin is its ability to delete all the generated content with a single click. This makes it convenient to remove the dummy data once you no longer need it, ensuring a clean and streamlined website.    </div>
+  <div id="services">
+      <div className='services-heading'>
+        <h3>MY services</h3>
+      </div>
+    <div className="services-container">
+        <div className='left'>
+          <div className="bg-1 feature-box-01">
+            <div className="icon">
+            <FontAwesomeIcon icon={icon({name: 'user-secret'})} />
+            </div>
+            <div className="feature-content">
+              <h5>Web Design</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div className="bg-2 feature-box-01">
+            <div className="icon">
+              <i className="fas fa-phone-alt"></i>
+            </div>
+            <div className="feature-content">
+              <h5>Front End Design</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div className='right'>
+          <div className="bg-2 feature-box-01">
+            <div className="icon">
+              <i className="fas fa-phone-alt"></i>
+            </div>
+            <div className="feature-content">
+              <h5>Website Maintenance</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div className="bg-1 feature-box-01">
+            <div className="icon">
+              <i className="fas fa-phone-alt"></i>
+            </div>
+            <div className="feature-content">
+              <h5>Front End Design</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
   );
 }
