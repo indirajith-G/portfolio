@@ -18,8 +18,11 @@ export default function Header() {
         const sections = ["home", "services", "skills", "projects", "contact"];
         for (const sectionId of sections) {
           const section = document.getElementById(sectionId);
-          const sectionTop = section.offsetTop - (header.offsetHeight + 5); // Adjust for header height
+          console.log("section is"+sectionId);
+          const sectionTop = section.offsetTop - (header.offsetHeight + 5);
+          console.log(sectionTop); // Adjust for header height
           const sectionBottom = sectionTop + section.offsetHeight;
+          console.log(sectionBottom);
   
           if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
             setActiveSection(sectionId);

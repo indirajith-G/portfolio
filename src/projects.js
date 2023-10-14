@@ -1,166 +1,67 @@
 import React from 'react';
-import './home.css';
+import './Project.css';
+import age from './images/age.jpg';
+import SmartEx from './images/smartEx.jpg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 export default function ProjectContent() {
   return (
-    <div id="projects">
+  <Container>
+		<div id="projects">
+			<div className='projects-heading'>
+			<h3>latest projects</h3>
+			</div>
+		</div>
+      <Row className='d-none d-lg-flex'> 
+        <Col    lg={{ order: 'last' }}>
+          <Card.Img className='project-image'src={SmartEx} />
+		    </Col>
+        <Col className= "project-detail-text" lg={{ order: 'first' }}>
+          <Card.Title>SmartEx</Card.Title>
+          <Card.Text>
+            SmartEx is a gate pass system designed to maintain a healthy relationship within the visitors and as well as the students inside an organization. The system is designed by using various combinations of the tools and technologies which have the growth in the modern technological field.
+          </Card.Text>
+          <a href="comingsoon" target="_blank" rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
+		    </Col>
+      </Row>
+      
+      <Row className='d-none d-lg-flex'>
+        <Col   xs={{ order: 'last' }} lg={{ order: 'first' }}>
+          <Card.Img className='project-image'src={age} />
+		    </Col>  
+        <Col className= "project-detail-text"  xs={{ order: 'first' }} lg={{ order: 'last' }}>
+          <Card.Title>Age-Quest</Card.Title>
+          <Card.Text>
+          Age-Quest allows you to effortlessly calculate your age or the age of anyone by simply entering the birthdate.
+          </Card.Text>
+          <a href="https://age-quest.netlify.app/" target="_blank" rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
+		    </Col>
+      </Row>
 
-      Projects 
-The “WP Dummy Content Generator” plugin iThe word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new. 
-The “WP Dummy Content Generator” plugin is a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new. 
-The “WP Dummy Content Generator” plugin is a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new. 
-The “WP Dummy Content Generator” plugin is a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new. 
-The “WP Dummy Content Generator” plugin is a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new. 
-The “WP Dummy Content Generator” plugin is a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in 
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.s a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-
-This plugin offers a user-friendly interface that allows you to customize the type, quantity, and characteristics of the dummy content you want to generate. You can specify the number of posts or pages, assign categories or tags, and even include featured images.
-
-One of the notable features of this plugin is its ability to delete all the generated content with a single click. This makes it convenient to remove the dummy data once you no longer need it, ensuring a clean and streamlined website.    </div>
+      <Card className= 'd-md-none small-screen' >
+      <Card.Img className='project-image'src={SmartEx} />
+      <Card.Body>
+      <Card.Title>SmartEx</Card.Title>
+          <Card.Text>
+            SmartEx is a gate pass system designed to maintain a healthy relationship within the visitors and as well as the students inside an organization. The system is designed by using various combinations of the tools and technologies which have the growth in the modern technological field.
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    <Card className= 'd-md-none small-screen' >
+    <Card.Img className='project-image'src={age} />
+      <Card.Body>
+      <Card.Title>Age-Quest</Card.Title>
+          <Card.Text>
+          Age-Quest allows you to effortlessly calculate your age or the age of anyone by simply entering the birthdate.
+          </Card.Text>
+          <a href="https://age-quest.netlify.app/" target="_blank" rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
+      </Card.Body>
+    </Card>
+  </Container>
   );
 }

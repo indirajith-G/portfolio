@@ -3,29 +3,25 @@ import './Info.css';
 import image from './images/image.jpg';
 
 export default function Info() {
-
   return (
     <div className="info-container">
-      <div className="row">
-        <div className="menu  col-6 ">
-          <div className="text  col-12">
+
+          <div className="text ">
             <div className="top_text">
-              <span>👋, MY NAME IS INDIRAJITH G </span>
+              <p>👋, MY NAME IS INDIRAJITH G </p>
             </div>
             <div className="center_text">
-              <span>I'm a Web Developer</span>
+              <p>I'm a Web Developer</p>
             </div>
             <div className="bottom_text">
-              <span>Based in Coimbatore, Tamil Nadu.</span>
+              <p>Based in Coimbatore, Tamil Nadu.</p>
             </div>
-          </div>
         </div>
-        <div className="photo_frame col-5 ">
+        <div className="photo_frame">
           <div className="photo">
             <img src={image} alt="my" />
           </div>
         </div>
       </div>
-    </div>
   );
 }

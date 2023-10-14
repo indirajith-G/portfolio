@@ -1,0 +1,209 @@
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}  
+  #skills{
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 90vh;
+    background: #fff;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: calc(3%);
+}
+.skills-heading{
+    width:100%;
+    text-transform: uppercase;
+    font-family: Jost,Helvetica,Arial,sans-serif !important;
+}
+.skills-heading h3{
+    font-size: 50px;
+    font-weight: 600;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(5%);
+}
+.skills-left{
+    padding: calc(1%);
+}
+.skills-bg-1 {
+    background-color:#9bd3d0;
+}
+.skills-bg-2 {
+    background-color: #feccb5;
+}
+.skills-bg-3 {
+    background-color:#c4d39b;
+}
+.skills-bg-4 {
+    background-color:#fec447;
+}
+.skills-bg-5 {
+    background-color: #92b5ff;
+}
+.skills-bg-6 {
+    background-color:#d2ceff;
+}
+.feature-box-02 {
+    display: flex;
+    align-items: center;
+    min-width: 250px;
+    margin-top: calc(1%);
+    margin-bottom: calc(2%);
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+}
+.feature-box-02 .skill-icon {
+    color: #0f172a;
+    display: flex;
+    font-size: 32px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    background: #fff;
+    margin-left:calc(1%);
+    border: #000 solid 2px;
+    border-top-right-radius: 50%;
+    border-top-left-radius:50%;
+}
+.feature-box-02.feature-box-02:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+.feature-box-02 h6 {
+    color: #0f172a;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: calc(2%);
+    margin-bottom: calc(2%);
+    padding:calc(10%);
+}
+.skills-right{
+    padding: calc(1%);
+}
+.right-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img{
+    --img-height: calc(var(--card-height)/1.2 );
+    width:calc(var(--img-height) / 1.5);
+    --color: #8A9B0F; /* the border color */
+    --border: 10px;   /* the border thickness*/
+    --offset: 20px;   /* control the offset*/
+    --gap: 5px;       /* the gap on hover */
+    
+    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+    --_o: calc(3*var(--offset));
+    padding: 
+      calc(var(--gap) + var(--border))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border) + var(--offset))
+      calc(var(--gap) + var(--border));
+    background: 
+      linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+      linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.img-card img:hover {
+    background-position: 0px 0px;
+    background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+    background-color: #000;
+    border: 10 solid #fff;
+    padding:calc(1%);
+    --color:orange;
+  }
+
+  /* media queries */
+  @media screen and (max-width:768px) {
+    #skills{
+        grid-template-columns: auto ;
+        padding: calc(5%);
+    }    
+
+}
+@media screen and (max-width: 768px){
+    .skills-container{
+        flex-direction: column;        
+    }
+    .left-content{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    #skills {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+}
+
+@media (min-width: 768px)
+{
+    #skills {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+}
+
+@media (min-width: 1024px)
+{
+    .skills-heading h3 {
+    font-size: 50px;
+}
+}
+
+@media (max-width: 768px)
+{
+    .skills-heading {
+    font-size: 40px;
+    text-align: center;
+}
+}
+
+@media (min-width: 1024px)
+{
+    .feature-box-02 h6 {
+    font-size: 24px;
+}
+}
+
+@media (min-width: 768px)
+{
+    .feature-box-02 h6 {
+    font-size: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+

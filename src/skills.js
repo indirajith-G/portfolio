@@ -1,66 +1,70 @@
 import React from 'react';
-import './home.css';
+import './Skills.css';
+import skill from './images/skill.jpg';
+
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faPython } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export default function SkillsContent() {
   return (
     <div id="skills">
-
-      Skills 
-The “WP Dummy Content Generator” plugin iThe word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.
-
-Why Lorem Ipsum Is Used?
-It helps the designer plan where the content will sit. It helps in creating drafts of the content on the pages of the website. It originates from the Latin text but is seen as gibberish.
-
-Sometimes, the reader gets distracted while creating or working on the website. That’s why this language is important.
-
-This tool makes the work easier for the webmaster.
-home
-	  The word Lorem Ipsum is derived from the Latin word which means “pain itself”. It is a kind of a text filler tool that is used by the webmaster on the website.
-
-Basically, this tool is used to create dummy content on the website when it’s new.s a powerful tool designed for WordPress websites. Its primary purpose is to generate dummy content, such as posts, pages, custom post types, and media files, to populate your website during development or testing phases.
-
-This plugin offers a user-friendly interface that allows you to customize the type, quantity, and characteristics of the dummy content you want to generate. You can specify the number of posts or pages, assign categories or tags, and even include featured images.
-
-One of the notable features of this plugin is its ability to delete all the generated content with a single click. This makes it convenient to remove the dummy data once you no longer need it, ensuring a clean and streamlined website.    </div>
+      <div className='left-content'>
+        <div className='skills-heading'>
+          <h3>My Skills</h3>
+        </div>
+        <div class="skills-container">
+          <div className='skills-left'>
+            <div class="skills-bg-1 feature-box-02 skills-feature-content">
+              <div class="skill-icon">
+              <FontAwesomeIcon icon={faHtml5} />
+              </div>
+                <h6>HTML</h6>
+            </div>
+            <div class="skills-bg-2 feature-box-02 skills-feature-content">
+                    <div class="skill-icon">
+                    <FontAwesomeIcon icon={faBootstrap} />
+                    </div>
+                      <h6>BootStrap</h6>
+            </div>
+            <div class="skills-bg-3 feature-box-02 skills-feature-content">
+                    <div class="skill-icon">
+                    <FontAwesomeIcon icon={faPython} />
+                    </div>
+                      <h6>Python</h6>
+            </div>
+          </div>
+          <div className='skills-right'>
+            <div class="skills-bg-4 feature-box-02 skills-feature-content">
+                <div class="skill-icon">
+                <FontAwesomeIcon icon={faCss3Alt} />
+                </div>
+                  <h6>CSS</h6>
+            </div>
+            <div class="skills-bg-5 feature-box-02 skills-feature-content">
+              <div class="skill-icon">
+              <FontAwesomeIcon icon={faReact} />
+              </div>
+                <h6>React JS</h6>
+            </div>
+            <div class="skills-bg-6 feature-box-02 skills-feature-content">
+                    <div class="skill-icon">
+                    <FontAwesomeIcon icon={faDatabase} />
+                    </div>
+                      <h6>Database</h6>
+            </div>
+          </div>      
+        </div>
+      </div>
+      <div className='right-content'>
+        <div className='img-card image-container'> 
+            <img src={skill} alt='fshdghdfk;lg'/>
+        </div>
+      </div>
+    </div>
   );
 }

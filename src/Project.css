@@ -1,0 +1,39 @@
+.projects-heading h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding: calc(3%);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-feature-settings: normal;
+    font-family: Jost,Helvetica,Arial,sans-serif;
+    font-variation-settings: normal;
+}
+
+:root{
+    --image-height:350px;
+}
+.project-image{
+    height:var(--image-height);
+    align-items: center;
+    justify-content: center;
+    
+}
+.row{
+    height: 65vh;
+}
+.project-detail-text{
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: calc(var(--image-height));
+}
+
+
+.small-screen{
+    z-index: -1;
+    margin: 10px;
+    text-align: justify;
+}
