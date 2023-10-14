@@ -55,7 +55,7 @@ export default function ProjectContent() {
           <Card.Text>
             SmartEx is a gate pass system designed to maintain a healthy relationship within the visitors and as well as the students inside an organization. The system is designed by using various combinations of the tools and technologies which have the growth in the modern technological field.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <a href="https://indirajith-g-portfolio.netlify.app/"rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
       </Card.Body>
     </Card>
     <Card className= 'd-md-none small-screen' >
@@ -65,7 +65,9 @@ export default function ProjectContent() {
           <Card.Text>
           Age-Quest allows you to effortlessly calculate your age or the age of anyone by simply entering the birthdate.
           </Card.Text>
-          <a href="https://age-quest.netlify.app/" target="_blank" rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
+          <Button variant="primary" onClick={openProjectLink}>
+            View Project
+          </Button>
       </Card.Body>
     </Card>
   </Container>
