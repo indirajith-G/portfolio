@@ -20,7 +20,7 @@ export default function ProjectContent() {
 			<h3>latest projects</h3>
 			</div>
 		</div>
-      <Row className='d-none d-lg-flex'> 
+      <Row className='d-none d-md-flex d-lg-flex'> 
         <Col    lg={{ order: 'last' }}>
           <Card.Img className='project-image'src={SmartEx} />
 		    </Col>
@@ -33,7 +33,7 @@ export default function ProjectContent() {
 		    </Col>
       </Row>
       
-      <Row className='d-none d-lg-flex'>
+      <Row className='d-none d-md-flex d-lg-flex'>
         <Col   xs={{ order: 'last' }} lg={{ order: 'first' }}>
           <Card.Img className='project-image'src={age} />
 		    </Col>  
@@ -55,7 +55,7 @@ export default function ProjectContent() {
           <Card.Text>
             SmartEx is a gate pass system designed to maintain a healthy relationship within the visitors and as well as the students inside an organization. The system is designed by using various combinations of the tools and technologies which have the growth in the modern technological field.
           </Card.Text>
-          <a href="https://indirajith-g-portfolio.netlify.app/"rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
+          <a href="https://indirajith-g-portfolio.netlify.app/"><Button variant="primary">View Project</Button></a>
       </Card.Body>
     </Card>
     <Card className= 'd-md-none small-screen' >
