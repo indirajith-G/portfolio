@@ -9,6 +9,10 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 export default function ProjectContent() {
+  const openProjectLink = () => {
+    const url = "https://age-quest.netlify.app/";
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
   <Container>
 		<div id="projects">
@@ -38,7 +42,9 @@ export default function ProjectContent() {
           <Card.Text>
           Age-Quest allows you to effortlessly calculate your age or the age of anyone by simply entering the birthdate.
           </Card.Text>
-          <a href="https://age-quest.netlify.app/"  rel="noopener noreferrer"><Button variant="primary">View Project</Button></a>
+          <Button variant="primary" onClick={openProjectLink}>
+            View Project
+          </Button>
 		    </Col>
       </Row>
 
